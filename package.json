@@ -12,6 +12,7 @@
     "@astrojs/renderer-svelte": "^0.5.2",
     "@swup/a11y-plugin": "github:swup/head-plugin",
     "@swup/head-plugin": "^1.2.0",
+    "@swup/overlay-theme": "^1.1.1",
     "@swup/slide-theme": "^1.0.5",
     "@vscode/emmet-helper": "^2.8.4",
     "astro": "^0.24.3",
@@ -19,6 +20,7 @@
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "prettier-plugin-astro": "^0.0.12",
+    "sass": "^1.49.9",
     "swup": "^2.0.14",
     "vite-imagetools": "^4.0.3"
   }
