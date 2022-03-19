@@ -5,6 +5,7 @@ import '../styles/home.css';
 // Component Imports
 import Tour from '../components/Tour.astro';
 import Nav from '../components/Nav.astro';
+
 // You can import components from any supported Framework here!
 import SvelteCounter from '../components/SvelteCounter.svelte';
 
@@ -12,7 +13,7 @@ import SvelteCounter from '../components/SvelteCounter.svelte';
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = 'second My Astro Site';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -35,13 +36,10 @@ let title = 'My Astro Site';
 	</style>
 </head>
 <body>
-  <Nav />
+  
 	<main>
 		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
+			<Nav />
 		</header>
 
 		<Tour />
