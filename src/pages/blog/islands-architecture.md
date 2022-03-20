@@ -10,6 +10,8 @@ tags:
 - color
 - typography
 description: Render HTML pages on the server, and inject placeholders or slots around highly dynamic regions.
+draft: false
+
 ---
 
 https://jasonformat.com/islands-architecture/

@@ -5,7 +5,7 @@ import Page from '../layouts/page.astro'
 let title = 'Blog';
 let description = 'A blog about web development, programming, and life.';
 
-const posts = Astro.fetchContent('./blog/*.md');
+const posts = Astro.fetchContent('./blog/*.md').filter(post => post.draft != true);
 console.log({posts})
 ---
 
@@ -15,8 +15,9 @@ console.log({posts})
   page content here {title}, {description}
 
   {posts.map((post) => (
-      <div post={post}>
-        <h1>{post.title}</h1>
+      <div class=`${post.url} post`>
+        <h4>{post.title}</h4>
+        <a href={post.url} title={post.title} class="read-more">Read more<span class="screen-reader-text"> about {post.title}</span></a>
       </div>
   ))}
 
@@ -29,6 +30,9 @@ console.log({posts})
 
 <style>
 h1 {
+  margin:1rem 0;
+}
+.post {
   margin:1rem 0;
 }
 </style>

@@ -40,7 +40,12 @@ a {
     color: #fff;
   }
 }
-
+main {
+  padding: var(--size-8);
+}
+main a {
+  text-decoration: underline;
+}
 /* swup */
 .transition-fade {
   transition: 0.2s;

@@ -32,7 +32,7 @@ export const NAV_ITEMS: NavItems = {
 export type SiteNavItem =  keyof typeof NAV_ITEMS
 
 export const SITE = {
-  title: 'Tom Hermans Starter',
+  title: 'Tom Hermans',
   description: 'A starter for a static site with typescript',
   hue: 0,
   saturation: 50,
