@@ -14,13 +14,11 @@ interface Props{
   prev?:string;
   canonicalURL?:string;
 }
-
-const { title, description, image, next, prev, canonicalURL} = Astro.props as Props;
+let { title, description, image, next, prev, canonicalURL} = Astro.props as Props;
 ---
 <html lang="en">
   <head>
   
-    <title>{title}</title>
     <MainHead
       title={title}
       description={description}
@@ -36,11 +34,15 @@ const { title, description, image, next, prev, canonicalURL} = Astro.props as Pr
     <Nav />
     
     <main class={`page-${title}`}>
-      <p>main-id-swup-start -  title={title}</p>
+      <p>slot-start -  title={title}</p>
       <slot />
-      <p>main-id-swup-END</p>
+      <p>slot-END</p>
     </main>
 
     <Footer />
   </body>
 </html>
+
+<style>
+  p { color: var(--basecolor)}
+</style>

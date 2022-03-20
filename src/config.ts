@@ -34,4 +34,7 @@ export type SiteNavItem =  keyof typeof NAV_ITEMS
 export const SITE = {
   title: 'Tom Hermans Starter',
   description: 'A starter for a static site with typescript',
+  hue: 0,
+  saturation: 50,
+  lightness: 50,
 }

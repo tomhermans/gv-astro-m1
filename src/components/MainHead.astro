@@ -1,4 +1,6 @@
 ---
+import { SITE } from '../config.ts'
+
 export interface Props {
   title: string;
   description: string;
@@ -8,7 +10,10 @@ export interface Props {
   canonicalURL?: string;
 }
 
-const { title, description, image, next, prev, canonicalURL } = Astro.props as Props;
+console.log({SITE});
+let { title, description, image, next, prev, canonicalURL } = Astro.props as Props;
+title = title + ' ' + SITE.title;
+// let basecolor = `:root { --basecolor: hsla(${SITE.hue}, ${SITE.saturation}%, ${SITE.lightness}%, 1); }`;
 ---
 
 <!-- Common -->
@@ -23,6 +28,9 @@ const { title, description, image, next, prev, canonicalURL } = Astro.props as P
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" href="/feed/posts.xml">
 
+<style>
+  /* {basecolor} */
+</style>
 <!-- SEO -->
 <link rel="canonical" href={canonicalURL}>
 {next && <link rel="next" aria-label="Previous Page" href={new URL(next, canonicalURL).href}>}
