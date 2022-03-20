@@ -9,12 +9,18 @@ specifiers:
   '@vscode/emmet-helper': ^2.8.4
   astro: ^0.24.3
   autoprefixer: ^10.4.4
+  carbon-components-svelte: ^0.62.1
+  mdsvex: ^0.10.5
+  open-props: ^1.3.9
   postcss: ^8.4.12
   prettier: ^2.6.0
   prettier-plugin-astro: ^0.0.12
   sass: ^1.49.9
   swup: ^2.0.14
   vite-imagetools: ^4.0.3
+
+dependencies:
+  open-props: 1.3.9
 
 devDependencies:
   '@astrojs/renderer-svelte': 0.5.2_postcss@8.4.12+sass@1.49.9
@@ -25,6 +31,8 @@ devDependencies:
   '@vscode/emmet-helper': 2.8.4
   astro: 0.24.3_sass@1.49.9
   autoprefixer: 10.4.4_postcss@8.4.12
+  carbon-components-svelte: 0.62.1
+  mdsvex: 0.10.5
   postcss: 8.4.12
   prettier: 2.6.0
   prettier-plugin-astro: 0.0.12
@@ -1041,6 +1049,12 @@ packages:
     resolution: {integrity: sha512-xjlIAFHucBRSMUo1kb5D4LYgcN1M45qdKP++lhqowDpwJwGkpIRTt5qQqnhxjj1vHcI7nrJxWhCC1ATrCEBTcw==}
     dev: true
 
+  /carbon-components-svelte/0.62.1:
+    resolution: {integrity: sha512-tzDS7qJUCxvHve3MceXKUR3lA3S1OA/1fxmjxwHnuw6GBtkW5TjMdHkw4NJ9I+plvZt3wZZD3RioOYVGBtBAig==}
+    dependencies:
+      flatpickr: 4.6.9
+    dev: true
+
   /ccount/2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
     dev: true
@@ -1711,6 +1725,10 @@ packages:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+    dev: true
+
+  /flatpickr/4.6.9:
+    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
     dev: true
 
   /foreach/2.0.5:
@@ -2525,6 +2543,17 @@ packages:
     resolution: {integrity: sha512-n4Vypz/DZgwo0iMHLQL49dJzlp7YtAJP+N07MZHpjPf/5XJuHUWstviF4Mn2jEiR/GNmtnRRqnwsXExk3igfFA==}
     dev: true
 
+  /mdsvex/0.10.5:
+    resolution: {integrity: sha512-/B23WZn5Vjrjh7Qp2YsOXLkU9YFm59IEylKNXC10o05ZaCP4LNv32tGXKP6aEssss6hk/LdISJuneELHFIS2pQ==}
+    peerDependencies:
+      svelte: 3.x
+    dependencies:
+      '@types/unist': 2.0.6
+      prism-svelte: 0.4.7
+      prismjs: 1.27.0
+      vfile-message: 2.0.4
+    dev: true
+
   /mdurl/1.0.1:
     resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
     dev: true
@@ -3033,6 +3062,10 @@ packages:
       wrappy: 1.0.2
     dev: true
 
+  /open-props/1.3.9:
+    resolution: {integrity: sha512-Lv69rcEx0XA0r5IsPwFo59V+Wxh/l5fIXeTubcuchXk5h+e+2tAIGH64Tyz6JWsBxufiCFI5Q5N0xWrtlbYilQ==}
+    dev: false
+
   /opencollective-postinstall/2.0.3:
     resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
     hasBin: true
@@ -3198,6 +3231,10 @@ packages:
 
   /pretty-format/3.8.0:
     resolution: {integrity: sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=}
+    dev: true
+
+  /prism-svelte/0.4.7:
+    resolution: {integrity: sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==}
     dev: true
 
   /prismjs/1.27.0:
@@ -4118,6 +4155,12 @@ packages:
       unist-util-visit: 4.1.0
     dev: true
 
+  /unist-util-stringify-position/2.0.3:
+    resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
+    dependencies:
+      '@types/unist': 2.0.6
+    dev: true
+
   /unist-util-stringify-position/3.0.2:
     resolution: {integrity: sha512-7A6eiDCs9UtjcwZOcCpM4aPII3bAAGv13E96IkawkOAW0OhH+yRxtY0lzo8KiHpzEMfH7Q+FizUmwp8Iqy5EWg==}
     dependencies:
@@ -4196,6 +4239,13 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
       vfile: 5.3.2
+    dev: true
+
+  /vfile-message/2.0.4:
+    resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-stringify-position: 2.0.3
     dev: true
 
   /vfile-message/3.1.2:

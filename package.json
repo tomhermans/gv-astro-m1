@@ -17,6 +17,8 @@
     "@vscode/emmet-helper": "^2.8.4",
     "astro": "^0.24.3",
     "autoprefixer": "^10.4.4",
+    "carbon-components-svelte": "^0.62.1",
+    "mdsvex": "^0.10.5",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "prettier-plugin-astro": "^0.0.12",

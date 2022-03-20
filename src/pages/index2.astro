@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Main.astro';
+import Accordion from '../components/svelte/Accordion.svelte';
+import Checkbox from '../components/svelte/Checkbox.svelte';
+import Button from '../components/svelte/Button.svelte'
+
+import "carbon-components-svelte/css/g100.css";
+
 
 // Style Imports
 import '../styles/global.css';
@@ -29,7 +35,12 @@ let canonicalURL = 'root'
     <p>test test test</p>
 		<Tour />
 
-  	<SvelteCounter client:visible />
+    <Button message="Tom" color="#9a90a0" client:visible />
+    <Checkbox client:load />
+    
+    <Accordion client:load />
+  	
+    <SvelteCounter client:visible />
   </div>
   <footer>
     some footer content

@@ -16,6 +16,7 @@ published: true
 
 In a conversation I had earlier this week, I used the term "Mystery meat navigation" and my colleagues showed me with their confused looks that I'm old. They didn't know what the phrase meant or why I would use it.
 
+
 I must admit, when I heard it first somewhere end '90s it baffled me too. Not being familiar with the US high school system and their warm lunch at school. The students get served the daily offer which would include meat, but no one could really tell what it was. Hence: mystery meat.
 
 ![School lunch with mystery meat on a tray](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rq7wy1yms85baem8o85n.jpeg)

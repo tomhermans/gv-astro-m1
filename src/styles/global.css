@@ -46,6 +46,10 @@ main {
 main a {
   text-decoration: underline;
 }
+main p,
+main img {
+  margin-bottom: 1rem;
+}
 /* swup */
 .transition-fade {
   transition: 0.2s;
