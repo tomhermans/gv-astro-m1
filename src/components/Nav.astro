@@ -3,7 +3,7 @@ import { toTitleCase } from '../utils'
 import { NAV_ITEMS, SiteNavItem } from '../config'
 
 export type Props = {
-    skip: SiteNavItem
+    // skip: SiteNavItem
 }
 const { skip } = Astro.props
 
@@ -27,8 +27,8 @@ const shouldSkip = (navItemKey) => NAV_ITEMS[navItemKey] && navItemKey === skip
     gap: 4px;
   }
   .nav {
-    padding: 1rem;
-    background: #99cbd4;
+    padding: 1rem 0 2rem;
+    background: #001b44;
     ul {
       li {
         padding-left: 8px;

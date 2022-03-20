@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Main.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { pid: '1' } },
+    { params: { pid: '2' } },
+    { params: { pid: "abc" } },
+  ];
+}
+const {pid} = Astro.request.params;
+---
+  <Layout title={pid} description="dynamic page">
+    <p>Post: {pid}</p>
+  </Layout>

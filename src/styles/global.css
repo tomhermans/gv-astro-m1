@@ -16,7 +16,7 @@
 }
 
 body {
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   width: 100%;
   min-height: 100vh;
   /* display: grid; */
@@ -28,6 +28,9 @@ body > * {
   outline: 1px dashed red;
 }
 
+a {
+  color: inherit;
+}
 @media (prefers-color-scheme: dark) {
   body {
     background: #111827;
@@ -35,9 +38,9 @@ body > * {
   }
 }
 
-/*swup */
+/* swup */
 .transition-fade {
-  transition: 2s;
+  transition: 0.2s;
   opacity: 1;
 }
 

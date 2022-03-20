@@ -1,0 +1,30 @@
+---
+import SITE_DATA from '../config.ts';
+console.log({SITE_DATA})
+---
+
+<footer>
+  <h3>Find me on the internet:</h3>
+
+  <ul>
+    <li><a href="https://github.com/tomhermans">GitHub</a></li>
+    <li><a href="https://twitter.com/tomhermans">Twitter</a></li>
+    <li><a href="https://dev.to/tomhermans">DEV</a></li>
+  </ul>
+  <p>&copy; 2022 - Tom Hermans</p>
+</footer>
+
+<style lang="scss">
+  footer {
+    background-color: hsla(0,0%,0%,.4);
+    color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      gap: 1rem;
+    }
+  }
+</style>

@@ -1,5 +1,7 @@
-import type{ NavItems } from './types'
-
+import type{ NavItems, BaseHeadAttrs } from './types'
+export const SITE_DATA = {
+  title: 'Tom Hermans Starter'
+}
 export const NAV_ITEMS: NavItems = {
     home: {
         path: '/',
@@ -30,5 +32,6 @@ export const NAV_ITEMS: NavItems = {
 export type SiteNavItem =  keyof typeof NAV_ITEMS
 
 export const SITE = {
-
+  title: 'Tom Hermans Starter',
+  description: 'A starter for a static site with typescript',
 }

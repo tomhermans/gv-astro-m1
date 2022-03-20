@@ -1,0 +1,34 @@
+---
+// import Markdown from 'astro/components';
+import Page from '../layouts/page.astro'
+
+let title = 'Blog';
+let description = 'A blog about web development, programming, and life.';
+
+const posts = Astro.fetchContent('./blog/*.md');
+console.log({posts})
+---
+
+<!-- <Page title={title} description={description} canonicalURL={Astro.request.canonicalURL}> -->
+<Page title={title} description={description} >
+
+  page content here {title}, {description}
+
+  {posts.map((post) => (
+      <div post={post}>
+        <h1>{post.title}</h1>
+      </div>
+  ))}
+
+  <!-- <Markdown>
+    this is a bunch of articles we've posted and linked 
+    so far about the island architecture, SPA fatigue and Astro.
+
+  </Markdown> -->
+</Page>
+
+<style>
+h1 {
+  margin:1rem 0;
+}
+</style>

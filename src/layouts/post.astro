@@ -4,7 +4,6 @@ import MainHead from '../components/MainHead.astro'
 import Footer from '../components/Footer.astro'
 
 import '../styles/global.css';
-// import '../styles/home.css';
 
 interface Props{
   title:string;
@@ -15,12 +14,11 @@ interface Props{
   canonicalURL?:string;
 }
 
-const { title, description, image, next, prev, canonicalURL} = Astro.props as Props;
+const { title, description, image, date, author, content} = Astro.props as Props;
 ---
 <html lang="en">
   <head>
   
-    <title>{title}</title>
     <MainHead
       title={title}
       description={description}
@@ -29,16 +27,25 @@ const { title, description, image, next, prev, canonicalURL} = Astro.props as Pr
       prev={prev}
       canonicalURL={canonicalURL}
     />
-    
   </head>
 
-  <body class={`main-astro page-${title}`} >
+  <body class="post-astro">
     <Nav />
     
-    <main class={`page-${title}`}>
-      <p>main-id-swup-start -  title={title}</p>
+    <main class="wrapper">
+      <p>main-start -  title={title}</p>
+      <h5 class="text-center text-gray-400">{
+        new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(new Date(content.date))
+      }</h5>
+      <h1 class="text-center text-gray-700">{content.title}</h1>
+      
+
+      <!-- post: separator -->
+      <hr />
+
+      <!-- post: content -->
       <slot />
-      <p>main-id-swup-END</p>
+      <p>main-END</p>
     </main>
 
     <Footer />

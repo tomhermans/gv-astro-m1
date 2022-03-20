@@ -4,6 +4,7 @@ import Layout from '../layouts/Main.astro';
 // Style Imports
 import '../styles/global.css';
 import '../styles/home.css';
+
 // Component Imports
 import Tour from '../components/Tour.astro';
 
@@ -15,7 +16,7 @@ import SvelteCounter from '../components/SvelteCounter.svelte';
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
 let title = 'index2- My Astro Site';
-
+let canonicalURL = 'root'
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -34,10 +35,3 @@ let title = 'index2- My Astro Site';
     some footer content
   </footer>
 </Layout>
-
-<style>
-  .index2 {
-    background: red;
-    padding: 1rem;
-  }
-</style>
