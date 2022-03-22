@@ -1,4 +1,5 @@
 <script>
+  import { data, nameslist } from "./Ducks_data.js";
   const ducks_orig = [
     { name: "Huey", id: 0 },
     { name: "Dewey", id: 1 },
@@ -10,6 +11,8 @@
   export let name;
 
   if (!list) {
+    ducks = nameslist;
+  } else {
     ducks = ducks_orig;
   }
   let selectedDucks = new Set();
@@ -36,7 +39,7 @@
   };
 </script>
 
-{#if !list}
+{#if list}
   <p>using default list with ducks</p>
 {/if}
 <h3>{name}</h3>

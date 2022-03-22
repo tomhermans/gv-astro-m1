@@ -39,9 +39,14 @@ let description = 'An example blog on Astro';
   <div style="margin-top: 1rem; padding:1rem; border: 1px dashed #555">
   <h3>What you see here is a simple Svelte Component</h3>
   <p>Fetching some data from an array, listing them. and letting them be checked.</p>
-    <Ducks client:load name="AstroDucks" />
-
+    
+    <Ducks client:load list="mylist" name="AstroDucks" />
+    
     <hr>
+
+    <p>Same component, but now I pass in an argument which gets checked so a second file gets used for the list.</p>
+    <Ducks client:load name="Singers" />
+  
     <p class="small">Can't get it to work when I pass a list of arguments as an array though.</p>
   </div>
 
