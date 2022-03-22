@@ -29,14 +29,14 @@ let description = 'An example blog on Astro';
   <h2>{title}</h2>
   <p>Astro page component which loads a svelte component</p>
   <ul style="padding-left: .9rem; margin-top: 0">
-    <li class="small">AstroDucks</li>
+    <li class="small">AstroDucks array in Astro itself.</li>
     {astroducks.map((ad) => (
       <li class="small">
         [{ad.id}]{ad.name} 
       </li>
     ))}
   </ul>
-  <div style="padding:1rem; border: 1px dashed #555">
+  <div style="margin-top: 1rem; padding:1rem; border: 1px dashed #555">
   <h3>What you see here is a simple Svelte Component</h3>
   <p>Fetching some data from an array, listing them. and letting them be checked.</p>
     <Ducks client:load name="AstroDucks" />
