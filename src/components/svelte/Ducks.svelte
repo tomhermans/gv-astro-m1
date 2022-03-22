@@ -30,45 +30,51 @@
   };
 </script>
 
-<ol>
-  <li>
-    <input
-      type="checkbox"
-      id="select-all"
-      checked={selectedDucks.size === ducks.length}
-      on:change={onSelectAll}
-    />
-    <label for="select-all"><strong>Select all</strong></label>
-  </li>
-  {#each ducks as duck}
+<div class="flex">
+  <ul class="flex-1" style="padding: 1rem;background: hsla(0,0%,0%,.5)">
     <li>
       <input
         type="checkbox"
-        id="cb{duck.id}"
-        value={duck.id}
-        checked={selectedDucks.has(duck)}
-        on:change={onCheckDuck}
+        id="select-all"
+        checked={selectedDucks.size === ducks.length}
+        on:change={onSelectAll}
       />
-      <label for="cb{duck.id}">{duck.name}</label>
+      <label for="select-all"><strong>Select all</strong></label>
     </li>
-  {/each}
-</ol>
+    {#each ducks as duck}
+      <li>
+        <input
+          type="checkbox"
+          id="cb{duck.id}"
+          value={duck.id}
+          checked={selectedDucks.has(duck)}
+          on:change={onCheckDuck}
+        />
+        <label for="cb{duck.id}">{duck.name}</label>
+      </li>
+    {/each}
+  </ul>
 
-<p>
-  <span>{selectedDucks.size}</span> ducks selected. <br />Show List of selected:
-</p>
-<ul>
-  {#each [...selectedDucks] as item}
-    <li>
-      {item.id}
-      {item.name}
-      <!-- {ducks[item[0]].name} -->
-    </li>
-  {/each}
-</ul>
+  <div class="flex-1" style="padding: 1rem;background: hsla(0,0%,80%,.1)">
+    <p>
+      <span>{selectedDucks.size}</span> ducks selected. <br />Show List of
+      selected:
+    </p>
+    <ul>
+      {#each [...selectedDucks] as item}
+        <li>
+          ➔
+          {item.id}
+          {item.name}
+          <!-- {ducks[item[0]].name} -->
+        </li>
+      {/each}
+    </ul>
+  </div>
+</div>
 
 <style lang="scss">
-  ol {
+  ul {
     list-style-type: none;
     padding-left: 0;
   }
@@ -79,13 +85,21 @@
   }
   span {
     font-weight: bold;
-    color: red;
-    padding-right: 0.2rem;
+    color: #ff7900;
+    padding: 0.2rem 0.4rem;
+    background: #324f7b;
+    margin-right: 0.2rem;
   }
   label {
     margin-left: 0.5rem;
   }
   input {
     margin: 0;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-1 {
+    flex-grow: 1;
   }
 </style>

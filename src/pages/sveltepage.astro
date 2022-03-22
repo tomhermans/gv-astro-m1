@@ -22,10 +22,15 @@ let description = 'An example blog on Astro';
 
 
 <Layout title={title}>
-    <Ducks client:load />
-
   <h2>{title}</h2>
-  <p>{description}</p>
+  <p>Astro page component which loads a svelte component</p>
+  <div style="padding:1rem; border: 1px dashed #555">
+  
+  <h3>What you see here is a simple Svelte Component</h3>
+  <p>Fetching some data from an array, listing them. and letting them be checked.</p>
+    <Ducks client:load />
+  </div>
+
   test
   <footer>
     some footer content
