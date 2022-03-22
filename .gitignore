@@ -12,6 +12,11 @@ yarn-error.log*
 # environment variables
 .env
 .env.production
+.env.local
+.env.test
+.env.test.local
+
 
 # macOS-specific files
 .DS_Store
+.pem

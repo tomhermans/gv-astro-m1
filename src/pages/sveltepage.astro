@@ -1,0 +1,33 @@
+---
+// Component Imports
+import Layout from '../layouts/Main.astro';
+import Ducks from '../components/svelte/Ducks.svelte'
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'sveltepage';
+let description = 'An example blog on Astro';
+
+// Data Fetching: List all Markdown posts in the repo.
+// let allPosts = Astro.fetchContent('./post/*.md');
+// allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+// let firstPage = allPosts.slice(0, 2);
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+  
+
+
+<Layout title={title}>
+    <Ducks client:load />
+
+  <h2>{title}</h2>
+  <p>{description}</p>
+  test
+  <footer>
+    some footer content
+  </footer>
+</Layout>

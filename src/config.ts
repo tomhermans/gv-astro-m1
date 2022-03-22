@@ -19,6 +19,10 @@ export const NAV_ITEMS: NavItems = {
         path: '/index3',
         title: 'index3'
     },
+    sveltepage: {
+        path: '/sveltepage',
+        title: 'sveltepage'
+    },
     blog: {
         path: '/blog',
         title: 'blog'
