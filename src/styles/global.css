@@ -59,3 +59,6 @@ main img {
 html.is-animating .transition-fade {
   opacity: 0;
 }
+.small {
+  font-size: 0.75rem;
+}

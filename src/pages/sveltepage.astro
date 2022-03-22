@@ -2,7 +2,11 @@
 // Component Imports
 import Layout from '../layouts/Main.astro';
 import Ducks from '../components/svelte/Ducks.svelte'
-
+let astroducks = [
+    { name: "Huey", id: 0 },
+    { name: "Dewey", id: 1 },
+    { name: "Louie", id: 2 },
+  ];
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
@@ -24,11 +28,21 @@ let description = 'An example blog on Astro';
 <Layout title={title}>
   <h2>{title}</h2>
   <p>Astro page component which loads a svelte component</p>
+  <ul style="padding-left: .9rem; margin-top: 0">
+    <li class="small">AstroDucks</li>
+    {astroducks.map((ad) => (
+      <li class="small">
+        [{ad.id}]{ad.name} 
+      </li>
+    ))}
+  </ul>
   <div style="padding:1rem; border: 1px dashed #555">
-  
   <h3>What you see here is a simple Svelte Component</h3>
   <p>Fetching some data from an array, listing them. and letting them be checked.</p>
-    <Ducks client:load />
+    <Ducks client:load name="AstroDucks" />
+
+    <hr>
+    <p class="small">Can't get it to work when I pass a list of arguments as an array though.</p>
   </div>
 
   test

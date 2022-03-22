@@ -1,11 +1,17 @@
 <script>
-  const ducks_orig = ["Huey", "Dewey", "Louie"];
-  const ducks = [
+  const ducks_orig = [
     { name: "Huey", id: 0 },
     { name: "Dewey", id: 1 },
     { name: "Louie", id: 2 },
   ];
+  let ducks;
 
+  export let list;
+  export let name;
+
+  if (!list) {
+    ducks = ducks_orig;
+  }
   let selectedDucks = new Set();
 
   const onCheckDuck = (event) => {
@@ -30,6 +36,10 @@
   };
 </script>
 
+{#if !list}
+  <p>using default list with ducks</p>
+{/if}
+<h3>{name}</h3>
 <div class="flex">
   <ul class="flex-1" style="padding: 1rem;background: hsla(0,0%,0%,.5)">
     <li>
@@ -73,7 +83,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   ul {
     list-style-type: none;
     padding-left: 0;
