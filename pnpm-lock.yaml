@@ -2,21 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/renderer-svelte': ^0.5.2
-  '@swup/a11y-plugin': github:swup/head-plugin
-  '@swup/head-plugin': ^1.2.0
-  '@swup/overlay-theme': ^1.1.1
-  '@swup/slide-theme': ^1.0.5
   '@vscode/emmet-helper': ^2.8.4
   astro: ^0.24.3
   autoprefixer: ^10.4.4
-  carbon-components-svelte: ^0.62.1
-  mdsvex: ^0.10.5
   open-props: ^1.3.9
   postcss: ^8.4.12
   prettier: ^2.6.0
   prettier-plugin-astro: ^0.0.12
   sass: ^1.49.9
-  swup: ^2.0.14
   vite-imagetools: ^4.0.3
 
 dependencies:
@@ -24,20 +17,13 @@ dependencies:
 
 devDependencies:
   '@astrojs/renderer-svelte': 0.5.2_postcss@8.4.12+sass@1.49.9
-  '@swup/a11y-plugin': github.com/swup/head-plugin/bd6a988dd21a9848008b0f457e72a6b58d2634f7
-  '@swup/head-plugin': 1.2.0
-  '@swup/overlay-theme': 1.1.1
-  '@swup/slide-theme': 1.0.5
   '@vscode/emmet-helper': 2.8.4
   astro: 0.24.3_sass@1.49.9
   autoprefixer: 10.4.4_postcss@8.4.12
-  carbon-components-svelte: 0.62.1
-  mdsvex: 0.10.5
   postcss: 8.4.12
   prettier: 2.6.0
   prettier-plugin-astro: 0.0.12
   sass: 1.49.9
-  swup: 2.0.14
   vite-imagetools: 4.0.3
 
 packages:
@@ -538,32 +524,6 @@ packages:
       - supports-color
     dev: true
 
-  /@swup/head-plugin/1.2.0:
-    resolution: {integrity: sha512-ixtDl5JWNF6aHLLgLNOTpKboUOALuRtOOMi9u38jqPEDRnpJ+gCNeCO6RMBnbfyp45G6ml+fgd6ltrseZ7oOcA==}
-    dependencies:
-      '@swup/plugin': 1.0.1
-    dev: true
-
-  /@swup/overlay-theme/1.1.1:
-    resolution: {integrity: sha512-6LvTOcpwPvKvaGkzDR7sB9moSwM1hp+7vzT7M8hnTzUaZQ4yRo1y+ZnALZy13McUbsxqDX1Xn3CTJf34rs1sDA==}
-    dependencies:
-      '@swup/theme': 1.0.7
-    dev: true
-
-  /@swup/plugin/1.0.1:
-    resolution: {integrity: sha512-QrTGn1DLx+50CNsk6oGzUFnyNyLkDK6iLb032qKImmAXS+0Dd1cwa8cSGvJ+I27J4qR8y6oJNurgHIEc6ZCTrg==}
-    dev: true
-
-  /@swup/slide-theme/1.0.5:
-    resolution: {integrity: sha512-0xxqtURSMDScjLMRdNjtxzo8NGCPcmp6VXrQcxIQzQDSAvwNnP8Zw871C+FSL1EMe8OhAzWAP3E3x9vzH+iLHg==}
-    dependencies:
-      '@swup/theme': 1.0.7
-    dev: true
-
-  /@swup/theme/1.0.7:
-    resolution: {integrity: sha512-OINEaf34fYs90l7/YUUKfOf+paY7/FDhOBLwYxrD0w1OjBiItZpw3N+ATA/QklJwmoUu3KkDFOaQG0zT4KxmmA==}
-    dev: true
-
   /@ts-morph/common/0.11.1:
     resolution: {integrity: sha512-7hWZS0NRpEsNV8vWJzg7FEz6V8MaLNeJOmwmghqUXTpzk16V1LLZhdo+4QvE/+zv4cVci0OviuJFnqhEfoV3+g==}
     dependencies:
@@ -1049,12 +1009,6 @@ packages:
     resolution: {integrity: sha512-xjlIAFHucBRSMUo1kb5D4LYgcN1M45qdKP++lhqowDpwJwGkpIRTt5qQqnhxjj1vHcI7nrJxWhCC1ATrCEBTcw==}
     dev: true
 
-  /carbon-components-svelte/0.62.1:
-    resolution: {integrity: sha512-tzDS7qJUCxvHve3MceXKUR3lA3S1OA/1fxmjxwHnuw6GBtkW5TjMdHkw4NJ9I+plvZt3wZZD3RioOYVGBtBAig==}
-    dependencies:
-      flatpickr: 4.6.9
-    dev: true
-
   /ccount/2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
     dev: true
@@ -1263,10 +1217,6 @@ packages:
       p-map: 3.0.0
       rimraf: 3.0.2
       slash: 3.0.0
-    dev: true
-
-  /delegate/3.1.3:
-    resolution: {integrity: sha1-moJRp3fXAl+qVXN7w7BxdCEnqf0=}
     dev: true
 
   /delegates/1.0.0:
@@ -1725,10 +1675,6 @@ packages:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
-    dev: true
-
-  /flatpickr/4.6.9:
-    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
     dev: true
 
   /foreach/2.0.5:
@@ -2543,17 +2489,6 @@ packages:
     resolution: {integrity: sha512-n4Vypz/DZgwo0iMHLQL49dJzlp7YtAJP+N07MZHpjPf/5XJuHUWstviF4Mn2jEiR/GNmtnRRqnwsXExk3igfFA==}
     dev: true
 
-  /mdsvex/0.10.5:
-    resolution: {integrity: sha512-/B23WZn5Vjrjh7Qp2YsOXLkU9YFm59IEylKNXC10o05ZaCP4LNv32tGXKP6aEssss6hk/LdISJuneELHFIS2pQ==}
-    peerDependencies:
-      svelte: 3.x
-    dependencies:
-      '@types/unist': 2.0.6
-      prism-svelte: 0.4.7
-      prismjs: 1.27.0
-      vfile-message: 2.0.4
-    dev: true
-
   /mdurl/1.0.1:
     resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
     dev: true
@@ -3066,11 +3001,6 @@ packages:
     resolution: {integrity: sha512-Lv69rcEx0XA0r5IsPwFo59V+Wxh/l5fIXeTubcuchXk5h+e+2tAIGH64Tyz6JWsBxufiCFI5Q5N0xWrtlbYilQ==}
     dev: false
 
-  /opencollective-postinstall/2.0.3:
-    resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
-    hasBin: true
-    dev: true
-
   /p-limit/2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
     engines: {node: '>=6'}
@@ -3231,10 +3161,6 @@ packages:
 
   /pretty-format/3.8.0:
     resolution: {integrity: sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=}
-    dev: true
-
-  /prism-svelte/0.4.7:
-    resolution: {integrity: sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==}
     dev: true
 
   /prismjs/1.27.0:
@@ -3978,14 +3904,6 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /swup/2.0.14:
-    resolution: {integrity: sha512-a+Ihye+rTOwyW7T/vJYwGEKy9kJwc4twwlBryoKZY6WNutQOdpWUKmCkJdvkrDNIqBAvIqpsGUW1NJvoxZxP8w==}
-    requiresBuild: true
-    dependencies:
-      delegate: 3.1.3
-      opencollective-postinstall: 2.0.3
-    dev: true
-
   /tar-fs/2.1.1:
     resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}
     dependencies:
@@ -4155,12 +4073,6 @@ packages:
       unist-util-visit: 4.1.0
     dev: true
 
-  /unist-util-stringify-position/2.0.3:
-    resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
-    dependencies:
-      '@types/unist': 2.0.6
-    dev: true
-
   /unist-util-stringify-position/3.0.2:
     resolution: {integrity: sha512-7A6eiDCs9UtjcwZOcCpM4aPII3bAAGv13E96IkawkOAW0OhH+yRxtY0lzo8KiHpzEMfH7Q+FizUmwp8Iqy5EWg==}
     dependencies:
@@ -4239,13 +4151,6 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
       vfile: 5.3.2
-    dev: true
-
-  /vfile-message/2.0.4:
-    resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
-    dependencies:
-      '@types/unist': 2.0.6
-      unist-util-stringify-position: 2.0.3
     dev: true
 
   /vfile-message/3.1.2:
@@ -4448,12 +4353,4 @@ packages:
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
-    dev: true
-
-  github.com/swup/head-plugin/bd6a988dd21a9848008b0f457e72a6b58d2634f7:
-    resolution: {tarball: https://codeload.github.com/swup/head-plugin/tar.gz/bd6a988dd21a9848008b0f457e72a6b58d2634f7}
-    name: '@swup/head-plugin'
-    version: 1.2.0
-    dependencies:
-      '@swup/plugin': 1.0.1
     dev: true
