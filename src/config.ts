@@ -11,26 +11,11 @@ export const NAV_ITEMS: NavItems = {
         path: '/about',
         title: 'about'
     },
-    index2: {
-        path: '/index2',
-        title: 'index2'
-    },
-    index3: {
-        path: '/index3',
-        title: 'index3'
-    },
-    sveltepage: {
-        path: '/sveltepage',
-        title: 'sveltepage'
-    },
     blog: {
         path: '/blog',
         title: 'blog'
     },
-    podcast: {
-        path: '/podcast',
-        title: 'podcast'
-    }
+    
 }
 
 export type SiteNavItem =  keyof typeof NAV_ITEMS

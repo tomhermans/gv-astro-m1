@@ -4,39 +4,6 @@ import Layout from '../layouts/Main.astro';
 let title = "About";
 ---
   
-<style>
-  .text {
-    padding-bottom: 6rem;
-  }
-  .text p {
-      font-size: 1.2em;
-      line-height: 2;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-
-  .hero {
-    display: block;
-    height: 16rem;
-    overflow: hidden;
-    margin: 4rem 0;
-    
-  }
-  .hero-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-  .title {
-    font-size: 3em;
-    letter-spacing: -0.04em;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    text-align: center;
-  }
-</style>
-
 <Layout title={title}
   canonicalURL={Astro.request.canonicalURL}>
   <h2 class="title">{title}</h2>

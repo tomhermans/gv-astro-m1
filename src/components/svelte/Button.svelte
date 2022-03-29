@@ -13,13 +13,3 @@
 <div class="message">
   {message}
 </div>
-
-<style>
-  .message {
-    background: red;
-    display: block;
-    width: 100%;
-    /* height: 3rem; */
-    padding: 1rem;
-  }
-</style>
