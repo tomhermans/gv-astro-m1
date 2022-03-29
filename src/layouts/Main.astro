@@ -34,9 +34,7 @@ let { title, description, image, next, prev, canonicalURL} = Astro.props as Prop
     <Nav />
     
     <main class={`page-${title}`}>
-      <p>slot-start -  title={title}</p>
       <slot />
-      <p>slot-END</p>
     </main>
 
     <Footer />

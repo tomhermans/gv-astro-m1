@@ -6,7 +6,7 @@ let title = 'Blog';
 let description = 'A blog about web development, programming, and life.';
 
 const posts = Astro.fetchContent('./blog/*.md').filter(post => post.draft != true);
-console.log({posts})
+// console.log({posts})
 ---
 
 <!-- <Page title={title} description={description} canonicalURL={Astro.request.canonicalURL}> -->

@@ -1,6 +1,6 @@
 import type{ NavItems, BaseHeadAttrs } from './types'
 export const SITE_DATA = {
-  title: 'Tom Hermans Starter'
+  title: 'My Starter'
 }
 export const NAV_ITEMS: NavItems = {
     home: {
