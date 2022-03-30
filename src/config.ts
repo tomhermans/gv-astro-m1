@@ -15,6 +15,10 @@ export const NAV_ITEMS: NavItems = {
         path: '/blog',
         title: 'blog'
     },
+    origindex: {
+        path: '/index_orig',
+        title: 'Original index'
+    },
     
 }
 
