@@ -1,11 +1,36 @@
 ---
 import Layout from '../layouts/Main.astro';
-
+// import '../assets/style/global.css'
 let title = "About";
 ---
   
 <Layout title={title}
   canonicalURL={Astro.request.canonicalURL}>
+
+  <div class="bg-gradient-to-br from-indigo-900 to-green-900 min-h-screen overflow-auto">
+  <div class="container max-w-5xl mx-auto px-4">
+    <div class="w-4/5 mx-auto">
+      <h1 class="mt-32 text-white text-6xl font-bold">
+        <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo" /> Welcome to
+        <a href="https://astro.build/">Astro</a>
+      </h1>
+    </div>
+    <div class="w-4/5 my-10 mx-auto">
+      <h3 class="text-gray-300">
+        Build faster websites with less
+        <strong class="text-white">client-side Javascript</strong>
+        <br />
+        This is how easy it is to get started
+      </h3>
+    </div>
+    <div class="w-2/5 mx-auto bg-black text-white p-10 leading-10 rounded-2xl shadow-lg">
+      mkdir astro<br />
+      cd astro<br />
+      npm init astro
+    </div>
+  </div>
+</div>
+
   <h2 class="title">{title}</h2>
   <div class="hero">
     <img src="/assets/images/chapter-02.jpg" alt="chapter-02" />

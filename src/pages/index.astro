@@ -1,63 +1,48 @@
 ---
+import Layout from '../layouts/Main.astro';
+import HeaderLogo from '../components/HeaderLogo.astro'
+import HeaderIntro from '../components/HeaderIntro.astro'
+import TuinAanleg from '../components/TuinAanleg.astro'
+import TuinOnderhoud from '../components/TuinOnderhoud.astro'
+import ManierVanWerken from '../components/ManierVanWerken.astro'
+import Grondwerken from '../components/Grondwerken.astro'
+import ContactForm from '../components/ContactForm.astro'
+import OverGerd from '../components/OverGerd.astro'
 // Style Imports
-import '../styles/global.css';
+// import '../styles/global.css';
 import '../styles/home.css';
 // Component Imports
 import Tour from '../components/Tour.astro';
-import Nav from '../components/Nav.astro';
 // You can import components from any supported Framework here!
-import SvelteCounter from '../components/SvelteCounter.svelte';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = 'Home';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<Layout title={title}
+  canonicalURL={Astro.request.canonicalURL}>
+  <!-- slot content start -->
+  <HeaderLogo />
+  <div class="container m-auto px-8 sm:px-0">
+    <HeaderIntro />
+    <TuinAanleg />
+    <TuinOnderhoud />
+    <ManierVanWerken />
+  </div>
+  <Grondwerken />
+  <ContactForm />
+  <OverGerd />
+  <!-- slot content end -->
+</Layout>
 
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
-</head>
-<body>
-  <Nav />
-	<main>
-		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header>
 
-		<Tour />
 
-		<!--
-
-		You can also use imported framework components directly in your markup!
-		
-		Note: by default, these components are NOT interactive on the client.
-		The `:visible` directive tells Astro to make it interactive.
-		
-		See https://docs.astro.build/core-concepts/component-hydration/ 
-
-		-->
-
-		<SvelteCounter client:visible />
-	</main>
-</body>
-</html>
+<style global>
+  @import "../styles/global.css";
+</style>

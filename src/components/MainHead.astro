@@ -10,9 +10,9 @@ export interface Props {
   canonicalURL?: string;
 }
 
-console.log({SITE});
+// console.log({SITE});
 let { title, description, image, next, prev, canonicalURL } = Astro.props as Props;
-title = title + ' ' + SITE.title;
+title = title + ' - ' + SITE.title;
 // let basecolor = `:root { --basecolor: hsla(${SITE.hue}, ${SITE.saturation}%, ${SITE.lightness}%, 1); }`;
 ---
 

@@ -1,3 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.button,
+.button--outline {
+  @apply text-base py-3 px-6 mx-2 bg-green-500 text-white font-bold rounded-full mt-1 mb-2 no-underline;
+  cursor: pointer;
+}
+
+.button:hover {
+  @apply text-white bg-green-600;
+}
+tton--outline {
+  @apply bg-transparent py-3 px-6 mx-2 border-green-500 text-green-500 font-bold rounded-full;
+  @apply border border-solid border-green-500;
+  @apply inline-flex items-center;
+  white-space: nowrap;
+}
+
+.button--outline:hover {
+  @apply border-transparent text-white bg-green-600;
+  white-space: nowrap;
+}
+.tel-link {
+  @apply text-gray-700;
+}
+.tel-link:hover {
+  @apply text-green-800;
+}
+.gv-logo svg {
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+}
+.ff0 {
+  font-family: sans-serif;
+}
+.ff1 {
+  font-family: "omnes";
+}
+strong {
+  @apply text-green-700;
+}
 /* @import "open-props/style";
 @import "open-props/normalize";
 
