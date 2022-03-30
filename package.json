@@ -17,6 +17,7 @@
     "prettier": "^2.6.0",
     "prettier-plugin-astro": "^0.0.12",
     "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23",
     "vite-imagetools": "^4.0.3"
   },
   "dependencies": {

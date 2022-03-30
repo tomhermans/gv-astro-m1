@@ -1,6 +1,6 @@
 ---
 // import Markdown from 'astro/components';
-import Page from '../layouts/page.astro'
+import Page from '../layouts/Main.astro'
 
 let title = 'Blog';
 let description = 'A blog about web development, programming, and life.';
@@ -12,7 +12,7 @@ const posts = Astro.fetchContent('./blog/*.md').filter(post => post.draft != tru
 <!-- <Page title={title} description={description} canonicalURL={Astro.request.canonicalURL}> -->
 <Page title={title} description={description} >
 
-  page content here {title}, {description}
+  page content here <br>{title}, {description}
 
   {posts.map((post) => (
       <div class=`${post.url} post`>
