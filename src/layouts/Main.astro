@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro'
 import MainHead from '../components/MainHead.astro'
 import Footer from '../components/Footer.astro'
 
@@ -28,6 +29,7 @@ let { title, description, image, next, prev, canonicalURL} = Astro.props as Prop
   </head>
 
   <body class={`main-astro page-${title}`} >
+    <Header />
     <Nav />
     
     <main class={`page-${title}`}>
@@ -37,7 +39,3 @@ let { title, description, image, next, prev, canonicalURL} = Astro.props as Prop
     <Footer />
   </body>
 </html>
-
-<style global>
-  @import "../styles/global.css";
-</style>

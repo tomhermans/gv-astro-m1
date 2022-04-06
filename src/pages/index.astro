@@ -1,48 +1,55 @@
 ---
-import Layout from '../layouts/Main.astro';
-import HeaderLogo from '../components/HeaderLogo.astro'
-import HeaderIntro from '../components/HeaderIntro.astro'
-import TuinAanleg from '../components/TuinAanleg.astro'
-import TuinOnderhoud from '../components/TuinOnderhoud.astro'
-import ManierVanWerken from '../components/ManierVanWerken.astro'
-import Grondwerken from '../components/Grondwerken.astro'
-import ContactForm from '../components/ContactForm.astro'
-import OverGerd from '../components/OverGerd.astro'
+import Layout from "../layouts/Main.astro";
+
+// import HeaderLogo from "../components/HeaderLogo.astro";
+import Hero from "../components/Hero.astro";
+
+import HeaderIntro from "../components/HeaderIntro.astro";
+import TuinAanleg from "../components/TuinAanleg2.astro";
+import TuinOnderhoud from "../components/TuinOnderhoud.astro";
+import ManierVanWerken from "../components/ManierVanWerken.astro";
+import Cta from "../components/Cta.astro";
+import USP from "../components/USP_leftright.astro";
+import USPWiggly from "../components/USP_wiggly.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Grondwerken from "../components/Grondwerken.astro";
+import ContactForm from "../components/ContactForm.astro";
+import OverGerd from "../components/OverGerd.astro";
 // Style Imports
 // import '../styles/global.css';
-import '../styles/home.css';
+import "../styles/home.css";
 // Component Imports
-import Tour from '../components/Tour.astro';
+import Tour from "../components/Tour.astro";
 // You can import components from any supported Framework here!
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'Home';
+let title = "Home";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<Layout title={title}
-  canonicalURL={Astro.request.canonicalURL}>
+<Layout {title} canonicalURL={Astro.canonicalURL}>
   <!-- slot content start -->
-  <HeaderLogo />
+  <!-- <HeaderLogo /> -->
+  <Hero />
   <div class="container m-auto px-8 sm:px-0">
     <HeaderIntro />
     <TuinAanleg />
+
     <TuinOnderhoud />
     <ManierVanWerken />
   </div>
   <Grondwerken />
+  <Cta />
+  <USP />
+  <USPWiggly />
+  <Testimonials />
+
   <ContactForm />
   <OverGerd />
   <!-- slot content end -->
 </Layout>
-
-
-
-<style global>
-  @import "../styles/global.css";
-</style>

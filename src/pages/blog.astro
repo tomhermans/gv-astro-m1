@@ -9,7 +9,7 @@ const posts = Astro.fetchContent('./blog/*.md').filter(post => post.draft != tru
 // console.log({posts})
 ---
 
-<!-- <Page title={title} description={description} canonicalURL={Astro.request.canonicalURL}> -->
+<!-- <Page title={title} description={description} canonicalURL={Astro.canonicalURL}> -->
 <Page title={title} description={description} >
 
   page content here <br>{title}, {description}
