@@ -8,7 +8,7 @@ export async function getStaticPaths() {
     { params: { pid: "abc" } },
   ];
 }
-const {pid} = Astro.request.params;
+const {pid} = Astro.params;
 ---
   <Layout title={pid} description="dynamic page">
     <p>Post: {pid}</p>
