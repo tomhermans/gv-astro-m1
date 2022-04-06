@@ -5,7 +5,7 @@ import Page from '../layouts/Main.astro'
 let title = 'Blog';
 let description = 'A blog about web development, programming, and life.';
 
-const posts = Astro.fetchContent('./blog/*.md').filter(post => post.draft != true);
+const posts = Astro.glob('./blog/*.md').filter(post => post.draft != true);
 // console.log({posts})
 ---
 
