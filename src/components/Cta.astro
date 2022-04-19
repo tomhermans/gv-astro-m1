@@ -1,16 +1,14 @@
 ---
-
+const {slogan, btntext } = Astro.props;
 ---
-
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-16 mx-auto">
     <div class="flex flex-col items-start mx-auto lg:w-2/3 sm:flex-row sm:items-center">
       <h1 class="flex-grow text-2xl font-medium text-gray-900 sm:pr-16 title-font">
-        Slow-carb next level shoindxgoitch ethical authentic, scenester
-        sriracha forage.
+        {slogan}
       </h1>
       <button class="flex-shrink-0 px-8 py-2 mt-10 text-lg text-white border-0 rounded bg-gvgreen-500 focus:outline-none hover:bg-gvgreen-600 sm:mt-0">
-        Button
+        {btntext}
       </button>
     </div>
   </div>

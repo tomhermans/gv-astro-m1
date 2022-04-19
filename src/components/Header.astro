@@ -1,26 +1,63 @@
 ---
-
+import imgUrl from '../assets/images/path-way.jpeg';
 ---
+
+
 <header class="text-gray-600 body-font">
-      <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
-        <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-          <a class="mr-5 cursor-pointer hover:text-gray-900">First Link</a>
-          <a class="mr-5 cursor-pointer hover:text-gray-900">Second Link</a>
-          <a class="mr-5 cursor-pointer hover:text-gray-900">Third Link</a>
-        </nav>
-        <a class="flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 text-white rounded-full bg-gvgreen-500" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-xl">Gerd Vereecken</span>
-        </a>
-        <div class="inline-flex ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
-          <button class="inline-flex items-center px-3 py-1 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0">
-            Bel
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
+  <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
+    <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
+      <a class="mr-5 cursor-pointer hover:text-gray-900">First Link</a>
+      <a class="mr-5 cursor-pointer hover:text-gray-900">Second Link</a>
+      <a class="mr-5 cursor-pointer hover:text-gray-900">Third Link</a>
+    </nav>
+    <a class="flex items-center order-first mb-4 font-medium text-gvgreen-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
+      <!-- <svg xmlns="https://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 text-white rounded-full bg-gvgreen-500" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <svg class="w-10 h-10 text-white rounded-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#71BE44"/><path fill-rule="evenodd" clip-rule="evenodd" d="M28.331 8.135A3.204 3.204 0 0 0 27.949 8c-2.043-.904-4.575-1.513-7.31-1.513-8.4 0-14.513 5.79-14.513 13.476 0 7.542 5.862 13.19 14.656 13.19 2.755 0 5.566-.562 7.836-1.485V21.294a2.7 2.7 0 0 0-2.913-2.69h-4.331c-.062-.004-.123-.01-.185-.01a2.7 2.7 0 1 0-.027 5.4h.013v.008h1.18v2.753c-.393.107-1.037.178-1.573.178-1.454 0-2.725-.324-3.78-.889h-.283v-.16c-2.064-1.234-3.23-3.433-3.23-5.921 0-3.896 2.825-6.935 7.436-6.935 1.647 0 3.365.4 4.984 1.044l.007-.019a3.197 3.197 0 0 0 2.415-5.918" fill="#fff"/></svg>
+      
+      <span class="ml-3 text-xl text-gvgreen-900">Gerd Vereecken</span>
+    </a>
+    <div class="inline-flex ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
+      <button class="inline-flex items-center px-3 py-1 mt-4 text-base font-bold text-white border-0 rounded bg-gvgreen-500 focus:outline-none hover:bg-gvgreen-200 md:mt-0">
+        Bel Gerd nu
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <style>
+    .hero {
+      display: grid;
+      width: 100%;
+      place-items: center;
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+      position: relative;
+      mix-blend-mode: multiply;
+    }
+    .hero::before {
+      content: '';
+      background-color: rgba(7, 112, 31, 0.2);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+    }
+    
+  </style>
+  <!-- <div class="hero" style="background-image: url(https://api.lorem.space/image/fashion?w=1000&h=800);"> -->
+  <div class="hero" style="background-image: url(${imgUrl})">
+    <!-- <div class="hero-overlay bg-opacity-20"></div> -->
+    <div class="text-center hero-content text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold text-white">Het gras is niet altijd groener ergens anders</h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary">Get Started</button>
       </div>
-    </header>
+    </div>
+  </div>
+
+</header>

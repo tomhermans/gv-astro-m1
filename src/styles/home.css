@@ -1,3 +1,87 @@
+:root {
+  --gvgreen-100: #ecf3e7;
+  --gvgreen-200: #cee3c0;
+  --gvgreen-300: #b2d59a;
+  --gvgreen-400: #91c86f;
+  --gvgreen-500: #72be46;
+  --gvgreen-600: #599e33;
+  --gvgreen-700: #3e7722;
+  --gvgreen-800: #285115;
+  --gvgreen-900: #112509;
+}
+
+.text-gvgreen-100 {
+  color: var(--gvgreen-100);
+}
+
+.text-gvgreen-200 {
+  color: var(--gvgreen-200);
+}
+
+.text-gvgreen-300 {
+  color: var(--gvgreen-300);
+}
+
+.text-gvgreen-400 {
+  color: var(--gvgreen-400);
+}
+
+.text-gvgreen-500 {
+  color: var(--gvgreen-500);
+}
+
+.text-gvgreen-600 {
+  color: var(--gvgreen-600);
+}
+
+.text-gvgreen-700 {
+  color: var(--gvgreen-700);
+}
+
+.text-gvgreen-800 {
+  color: var(--gvgreen-800);
+}
+
+.text-gvgreen-900 {
+  color: var(--gvgreen-900);
+}
+
+.bg-gvgreen-100 {
+  background-color: var(--gvgreen-100);
+}
+
+.bg-gvgreen-200 {
+  background-color: var(--gvgreen-200);
+}
+
+.bg-gvgreen-300 {
+  background-color: var(--gvgreen-300);
+}
+
+.bg-gvgreen-400 {
+  background-color: var(--gvgreen-400);
+}
+
+.bg-gvgreen-500 {
+  background-color: var(--gvgreen-500);
+}
+
+.bg-gvgreen-600 {
+  background-color: var(--gvgreen-600);
+}
+
+.bg-gvgreen-700 {
+  background-color: var(--gvgreen-700);
+}
+
+.bg-gvgreen-800 {
+  background-color: var(--gvgreen-800);
+}
+
+.bg-gvgreen-900 {
+  background-color: var(--gvgreen-900);
+}
+
 /* :root {
   --font-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",

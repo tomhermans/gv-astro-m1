@@ -24,30 +24,30 @@ svg:not(:root) {
 }
 .button,
 .button--outline {
-  @apply text-base py-3 px-6 mx-2 bg-green-500 text-white font-bold rounded-full mt-1 mb-2 no-underline;
+  @apply text-base py-3 px-6 mx-2 bg-gvgreen-500 text-white font-bold rounded-full mt-1 mb-2 no-underline;
   cursor: pointer;
 }
 
 .button:hover {
-  @apply text-white bg-green-600;
+  @apply text-white bg-gvgreen-600;
 }
 
 .button--outline {
-  @apply bg-transparent py-3 px-6 mx-2 border-green-500 text-green-500 font-bold rounded-full;
-  @apply border border-solid border-green-500;
+  @apply bg-transparent py-3 px-6 mx-2 border-gvgreen-500 text-gvgreen-500 font-bold rounded-full;
+  @apply border border-solid border-gvgreen-500;
   @apply inline-flex items-center;
   white-space: nowrap;
 }
 
 .button--outline:hover {
-  @apply border-transparent text-white bg-green-600;
+  @apply border-transparent text-white bg-gvgreen-600;
   white-space: nowrap;
 }
 .tel-link {
   @apply text-gray-700;
 }
 .tel-link:hover {
-  @apply text-green-800;
+  @apply text-gvgreen-800;
 }
 .gv-logo svg {
   display: block;
@@ -61,7 +61,7 @@ svg:not(:root) {
   font-family: 'omnes';
 }
 strong {
-  @apply text-green-700;
+  @apply text-gvgreen-700;
 }
 h1 {
   @apply text-brown-800;
