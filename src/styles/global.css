@@ -16,15 +16,9 @@ svg:not(:root) {
 .button:hover {
   @apply text-white bg-gvgreen-600;
 }
-tton--outline {
-  @apply px-6 py-3 mx-2 font-bold text-gvgreen-500 bg-transparent border-gvgreen-500 rounded-full;
-  @apply border border-gvgreen-500 border-solid;
-  @apply inline-flex items-center;
-  white-space: nowrap;
-}
 
 .button--outline:hover {
-  @apply text-white bg-gvgreen-600 border-transparent;
+  @apply text-white border-transparent bg-gvgreen-600;
   white-space: nowrap;
 }
 .tel-link {
