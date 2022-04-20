@@ -5,9 +5,9 @@
 svg:not(:root) {
   overflow: hidden;
 }
-.button,
+/* .button,
 .button--outline {
-  @apply text-base py-3 px-6 mx-2 bg-green-500 text-white font-bold rounded-full mt-1 mb-2 no-underline;
+  @apply px-6 py-3 mx-2 mt-1 mb-2 text-base font-bold text-white no-underline bg-green-500 rounded-full;
   cursor: pointer;
 }
 
@@ -15,14 +15,14 @@ svg:not(:root) {
   @apply text-white bg-green-600;
 }
 tton--outline {
-  @apply bg-transparent py-3 px-6 mx-2 border-green-500 text-green-500 font-bold rounded-full;
-  @apply border border-solid border-green-500;
+  @apply px-6 py-3 mx-2 font-bold text-green-500 bg-transparent border-green-500 rounded-full;
+  @apply border border-green-500 border-solid;
   @apply inline-flex items-center;
   white-space: nowrap;
 }
 
 .button--outline:hover {
-  @apply border-transparent text-white bg-green-600;
+  @apply text-white bg-green-600 border-transparent;
   white-space: nowrap;
 }
 .tel-link {
@@ -44,7 +44,7 @@ tton--outline {
 }
 strong {
   @apply text-green-700;
-}
+} */
 /* @import "open-props/style";
 @import "open-props/normalize";
 

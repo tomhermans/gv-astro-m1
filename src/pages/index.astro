@@ -26,10 +26,10 @@ let title = 'Home';
 ---
 
 <Layout title={title}
-  canonicalURL={Astro.request.canonicalURL}>
+  canonicalURL={Astro.canonicalURL}>
   <!-- slot content start -->
   <HeaderLogo />
-  <div class="container m-auto px-8 sm:px-0">
+  <div class="container px-8 m-auto sm:px-0">
     <HeaderIntro />
     <TuinAanleg />
     <TuinOnderhoud />
@@ -43,6 +43,6 @@ let title = 'Home';
 
 
 
-<style global>
+<style>
   @import "../styles/global.css";
 </style>
